@@ -1,0 +1,443 @@
+$main-grey: rgb(255, 0, 0);
+$main-gradient: lineargradient(rgba(255, 0, 0, 0), rgba(0, 255, 38, 0));
+$nav-text-color: #ff86bd;
+$btn-color: #ff84a6;
+
+
+@font-face {
+    font-family: Againts;
+    src: url(/fonts/Againts.woff) format("woff"), url(/fonts/Againts.woff)  format("truetype");
+}
+
+html {
+    font-size: 15px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: 'Be Vietnam', sans-serif;
+    color: #222;
+    width: 100%;
+}
+
+/* navigation */
+.navigation {
+
+    list-style: none;
+    text-align: center;
+    z-index: 9999;
+
+    .navigation-item {
+        display: inline-block;
+        margin: 1.5rem 1.5rem;
+        transition: transform 0.25s;
+
+        .navigation-link {
+            font-size: 1.4rem;
+            color: $nav-text-color;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    .navigation-item:hover {
+        transform: scale(1.10);
+    }
+
+}
+
+#main-header {
+    height: 754.4px;
+
+
+    background: url(/img/header_photo_v3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+
+    margin-top: -126px;
+    overflow: hidden;
+
+    .dark-overlay {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0,0.65);
+        overflow: hidden;
+    }
+
+    .white-overlay {
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        background: radial-gradient(rgba(255 ,255 ,255 , 0.15), rgba(255, 255, 255, 0));
+    }
+
+    h1 {
+        display: block;
+        
+        font-family: Againts;
+        font-size: 10rem;
+        text-align: center;
+        margin-top: 200px;
+        margin-bottom: 0px;
+
+        letter-spacing: 0.5rem;
+
+
+        background: -webkit-linear-gradient(#fff94c, #ff52cc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .header-text {
+        color: $btn-color;
+        text-align: center;
+        margin: 0 0;
+        margin-bottom: 3rem;
+    }
+
+    .btn {
+        text-decoration: none;
+        display: inline;
+        margin: auto 0.5rem;
+    
+        border: 1px solid $btn-color;
+        border-radius: 2px;
+    
+        padding: 0 1rem;
+        padding-top: 0.15rem;
+        padding-bottom: 0.65rem;
+    
+        color: $btn-color;
+    
+        font-size: 1.3rem;
+        letter-spacing: 0px;
+    
+        transition: background 0.25s, color 0.25s, border 0.25s;
+    }
+    
+    .btn:hover {
+        color: white;
+        background: $btn-color;
+        border-color: white;
+    }
+
+
+
+    .btn-container {
+        text-align: center;
+    }
+
+}
+
+
+#about-me-section {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+
+    .about-me-wrapper {
+        opacity: 0;
+    }
+
+
+    h2 {
+        font-family: Againts;
+        color: $nav-text-color;
+        font-size: 5rem;
+    }
+
+    .dev-photo {
+        width: 75%;
+        height: auto;
+
+        border: 2px solid $nav-text-color;
+        border-radius: 50%;
+    }
+
+    .about-me-box {
+        height: inherit;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        color: $nav-text-color;
+        font-size: 1.25rem;
+    }
+
+    .cite-text {
+        text-align: end;
+        font-weight: bold;
+    }
+
+    h3 {
+        text-align: center;
+        font-family: Againts;
+
+        color: $nav-text-color;
+
+        font-size: 3rem;
+
+        margin: 0.9rem 0;
+    }
+
+    span {
+        margin-left: 1%;
+    }
+
+    .tech-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tech-box {
+        width: 50%;
+        text-align: center;
+        padding: 10px 0px;
+        color: white;
+        width: 50%;
+        margin: 0 auto;
+
+        p {
+            font-family: 'Be Vietnam', sans-serif;
+            font-size: 1.4rem;
+            display: inline-block;
+            margin: 0 0;
+            padding: 0 0;
+            opacity: 1;
+            text-align: center;
+        }
+
+        i {
+            font-size: 1.55rem;
+            display: inline-block;
+            margin: 0 0;
+            padding: 0 0;
+        }
+    }
+
+    .html-box {
+        background: #E45733;
+    }
+    
+    .css-box {
+        background: #2866B1;
+    }
+
+    .js-box {
+        background: #FFD83A;
+    }
+
+    .jqu-box {
+        background: #1C78C0;
+    }
+
+    .react-box {
+        background: #61DAFB;
+    }
+
+    .bs-box {
+        background: #563D7C;
+    }
+
+    .sass-box {
+        background: #CC6799;
+    }
+
+}
+
+
+#projects-section {
+    position: relative;
+    background: linear-gradient(to right, #ffd16b, #ff8e9e);
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+
+    h2 {
+        display: block;
+        padding-top: 0rem;
+        padding-bottom: 1.75rem;
+        text-align: center;
+        font-family: Againts;
+        
+        color: white;
+
+        font-size: 5rem;
+
+    }
+
+    .section-secondary-desc {
+        text-align: center;
+        padding-bottom: 2rem;
+        color: white;
+    }
+
+    .project-row {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-box-1,
+    .project-box-2,
+    .project-box-3,
+    .project-box-4 {
+        height: 387.3px;
+        overflow:hidden;
+        background: url(/img/project-placeholder.jpg);
+        background-size: cover;
+        padding: 0px 0px;
+
+
+        .project-box-overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.7);
+            opacity: 0;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            transition: opacity 0.15s;
+
+            .project-text {
+                color: white;
+                margin: 0 0.5rem;
+                padding: 1rem 1.5rem;
+                text-align: center;
+                align-self: center;
+            }
+
+            .project-title {
+                font-size: 1.85rem;
+            }
+
+            .project-desc {
+                font-size: 1rem;
+            }
+
+            .note-text {
+                color: $btn-color;
+                font-size: 1.25rem;
+            }
+
+            .code-btn {
+                padding-top: 0;
+                padding-bottom: 0.5rem;
+                margin: 0px 9.5rem;
+                display: inline;
+                text-align: center;
+                text-decoration: none;
+                color: $btn-color;
+                border: 1px solid $btn-color;
+                border-radius: 4px;
+                transition: background 0.25s, color 0.25s, border 0.25s;
+            }
+
+            .code-btn:hover {
+                color: white;
+                background: $btn-color;
+                border-color: white;
+            }
+
+
+        }
+
+        .project-box-overlay:hover {
+            opacity: 1;
+        }
+
+
+
+    }
+
+    .project-box-1 {
+        background: url(/img/project-1.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+}
+
+
+
+
+#main-footer {
+    padding: 2rem 0;
+    background: linear-gradient(200deg, rgba(213, 213, 213, 0.01) 0%, rgba(213, 213, 213, 0.01) 14.286%,rgba(140, 140, 140, 0.01) 14.286%, rgba(140, 140, 140, 0.01) 28.572%,rgba(52, 52, 52, 0.01) 28.572%, rgba(52, 52, 52, 0.01) 42.858%,rgba(38, 38, 38, 0.01) 42.858%, rgba(38, 38, 38, 0.01) 57.144%,rgba(159, 159, 159, 0.01) 57.144%, rgba(159, 159, 159, 0.01) 71.42999999999999%,rgba(71, 71, 71, 0.01) 71.43%, rgba(71, 71, 71, 0.01) 85.71600000000001%,rgba(88, 88, 88, 0.01) 85.716%, rgba(88, 88, 88, 0.01) 100.002%),linear-gradient(337deg, rgba(25, 25, 25, 0.01) 0%, rgba(25, 25, 25, 0.01) 12.5%,rgba(150, 150, 150, 0.01) 12.5%, rgba(150, 150, 150, 0.01) 25%,rgba(84, 84, 84, 0.01) 25%, rgba(84, 84, 84, 0.01) 37.5%,rgba(85, 85, 85, 0.01) 37.5%, rgba(85, 85, 85, 0.01) 50%,rgba(188, 188, 188, 0.01) 50%, rgba(188, 188, 188, 0.01) 62.5%,rgba(80, 80, 80, 0.01) 62.5%, rgba(80, 80, 80, 0.01) 75%,rgba(73, 73, 73, 0.01) 75%, rgba(73, 73, 73, 0.01) 87.5%,rgba(219, 219, 219, 0.01) 87.5%, rgba(219, 219, 219, 0.01) 100%),linear-gradient(203deg, rgba(233, 233, 233, 0.01) 0%, rgba(233, 233, 233, 0.01) 25%,rgba(114, 114, 114, 0.01) 25%, rgba(114, 114, 114, 0.01) 50%,rgba(164, 164, 164, 0.01) 50%, rgba(164, 164, 164, 0.01) 75%,rgba(228, 228, 228, 0.01) 75%, rgba(228, 228, 228, 0.01) 100%),linear-gradient(317deg, rgba(139, 139, 139, 0.02) 0%, rgba(139, 139, 139, 0.02) 16.667%,rgba(44, 44, 44, 0.02) 16.667%, rgba(44, 44, 44, 0.02) 33.334%,rgba(166, 166, 166, 0.02) 33.334%, rgba(166, 166, 166, 0.02) 50.001000000000005%,rgba(2, 2, 2, 0.02) 50.001%, rgba(2, 2, 2, 0.02) 66.668%,rgba(23, 23, 23, 0.02) 66.668%, rgba(23, 23, 23, 0.02) 83.33500000000001%,rgba(21, 21, 21, 0.02) 83.335%, rgba(21, 21, 21, 0.02) 100.002%),linear-gradient(328deg, rgba(3, 3, 3, 0.03) 0%, rgba(3, 3, 3, 0.03) 12.5%,rgba(116, 116, 116, 0.03) 12.5%, rgba(116, 116, 116, 0.03) 25%,rgba(214, 214, 214, 0.03) 25%, rgba(214, 214, 214, 0.03) 37.5%,rgba(217, 217, 217, 0.03) 37.5%, rgba(217, 217, 217, 0.03) 50%,rgba(68, 68, 68, 0.03) 50%, rgba(68, 68, 68, 0.03) 62.5%,rgba(118, 118, 118, 0.03) 62.5%, rgba(118, 118, 118, 0.03) 75%,rgba(200, 200, 200, 0.03) 75%, rgba(200, 200, 200, 0.03) 87.5%,rgba(198, 198, 198, 0.03) 87.5%, rgba(198, 198, 198, 0.03) 100%),linear-gradient(97deg, rgba(195, 195, 195, 0.03) 0%, rgba(195, 195, 195, 0.03) 16.667%,rgba(177, 177, 177, 0.03) 16.667%, rgba(177, 177, 177, 0.03) 33.334%,rgba(170, 170, 170, 0.03) 33.334%, rgba(170, 170, 170, 0.03) 50.001000000000005%,rgba(158, 158, 158, 0.03) 50.001%, rgba(158, 158, 158, 0.03) 66.668%,rgba(121, 121, 121, 0.03) 66.668%, rgba(121, 121, 121, 0.03) 83.33500000000001%,rgba(146, 146, 146, 0.03) 83.335%, rgba(146, 146, 146, 0.03) 100.002%),linear-gradient(268deg, rgba(103, 103, 103, 0.03) 0%, rgba(103, 103, 103, 0.03) 25%,rgba(112, 112, 112, 0.03) 25%, rgba(112, 112, 112, 0.03) 50%,rgba(4, 4, 4, 0.03) 50%, rgba(4, 4, 4, 0.03) 75%,rgba(227, 227, 227, 0.03) 75%, rgba(227, 227, 227, 0.03) 100%),linear-gradient(90deg, hsl(98,0%,0%),hsl(98,0%,0%));
+
+    .footer-nav {
+        margin: 0 0;
+        padding: 0 0;
+        padding-bottom: 1.25rem;
+    }
+
+    .footer-nav-item {
+        display: inline-block;
+        margin: 0 1.25rem;
+        padding: 0 0;
+        transition: transform 0.25s;
+    }
+
+    .footer-nav-item:hover {
+        transform: scale(1.06);
+    }
+
+    .footer-nav-link {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        margin: 0 0;
+        padding: 0 0;
+    }
+
+    .footer-text {
+        color: white;
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 0 0;
+        padding: 0 0;
+        padding-bottom: 1rem;
+    }
+
+    .footer-link {
+        color: $btn-color;
+        text-decoration: none;
+    }
+}
+
+/* non-nested classes */
+.section-title {
+    text-align: center;
+    margin: 0 0;
+}
+
+.btn-desc {
+    text-decoration: none;
+    display: inline;
+    margin: auto 0.5rem;
+
+    border: 1px solid $nav-text-color;
+    border-radius: 4px;
+
+    padding: 0 1rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.65rem;
+
+    color: $nav-text-color;
+
+    font-size: 1.3rem;
+    letter-spacing: 0px;
+
+    transition: background 0.25s, color 0.25s, border 0.25s;
+}
+
+.btn-desc:hover {
+    color: white;
+    background: $nav-text-color;
+    border-color: white;
+}
